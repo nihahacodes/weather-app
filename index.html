@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <form id="form">
+            <input type="text" id="searchInput" placeholder="Enter City" required>
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <section class="result">
+            <figure class="name">
+                <figcaption id="cityName">London</figcaption>
+               
+            </figure>
+
+            <figure class="temp">
+                <img id="weatherIcon" src="https://openweathermap.org/img/wn/10d@4x.png" alt="icon">
+                <figcaption>
+                    <span id="temp">31</span><sup>o</sup>
+                </figcaption>
+            </figure>
+
+            <p class="description" id="desc">Rainy</p>
+
+            <ul>
+                <li>
+                    <span>Clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">70% </span>
+                </li>
+                <li>
+                    <span>Humidity </span>
+                    <span id="humidity">90%</span>
+                </li>
+                
+            </ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
